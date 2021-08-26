@@ -1,0 +1,134 @@
+@media screen and (max-width: 640px){
+
+html{
+    font-size: 8px;
+}
+
+.toggle_button{
+	display: block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.toggle_button div{
+	width: 100%;
+	height: 5px;
+	background-color: #070000;
+	margin: 5px 0;
+	cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+header {
+    height: 100px;
+    background-color: #FFFFFF;
+}
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;    
+}
+nav ul {
+	display: none;
+    width: 100%;
+    height: 190px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 1000;
+    padding: 0 40px;
+}
+
+nav ul li{
+    padding: 10px 0;
+}
+
+nav li:hover::after {
+    width: 25%;
+}
+
+#main_content{
+    height: 500px;
+}
+
+#expertise{
+    height: 1400px;
+}
+
+#expertise .col{
+    height: 400px;
+    margin-top: 20px;
+}
+
+#projects .container{
+    padding-top: 20%;
+}
+
+#blogs{
+    height: 1700px;
+}
+
+#blogs .container{
+    width: 100%;
+}
+
+#blogs .row{
+   justify-content: center;
+}
+
+#blogs .post{
+     flex: 0 0 80%;
+   margin-top: 5%;
+}
+
+#blogs .post h3{
+    font-size: 2.4rem;
+}
+
+#blogs .post p{
+    font-size: 2rem;
+}
+
+#contact{
+    height: 800px;
+    flex-direction: column-reverse;
+}
+
+#contact .left,#contact .right{
+    width: 100%;
+    margin: 0;
+    padding: 1% 4%;
+}
+
+#contact .right iframe{
+    width: 100%;
+    height: 80%;
+}
+
+footer .container{
+    width: 100%;
+}
+
+footer .row:first-child .col:first-child{
+    width: 70%;
+}
+
+footer .row:first-child .col:last-child{
+    width: 30%;
+}
+
+footer .right iframe{
+    width: 90% !important;
+}
+}
